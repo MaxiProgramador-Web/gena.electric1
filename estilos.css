@@ -1,0 +1,145 @@
+body{
+    background-color: rgb(174, 174, 174);
+    color: rgb(159, 159, 0);
+}
+.a{
+  display: flex;
+  justify-content: center;
+}
+.a img{
+    max-width: 250px;
+}
+.b{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.b img{
+    width: 400px;
+    border-radius: 10px;
+}
+.whatsapp-float{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+}
+.whatsapp-float img{
+    width: 100%;
+    height: 100%;
+}
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.boton{
+    display: inline-block;
+    margin: 40px auto;
+    padding: 12px 25px;
+    background-color: #ff8438;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.boton:hover{
+    background-color: #0084a4;
+    transform: scale(1.05);
+}
+.d{
+    width: 400px;
+    max-width: 100%;
+}
+.btn-instagram {
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+}
+.titulo-principal img{
+    width: 70px;
+    transform: scale(1.2)
+}
+
+.btn-instagram:hover{
+    transform: scale(1.2)
+}
+.BOTON{
+    display: inline-block;
+    margin: 40px auto;
+    padding: 12px 25px;
+    background-color: #0084a4;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.BOTON:hover{
+    background-color: #ff8438;
+    transform: scale(1.05);
+}
+.c{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.e{
+    text-align: center;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.BoToN{
+    display: inline-block;
+    margin: 40px auto;
+    padding: 12px 25px;
+    background-color: #303031;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.BoToN:hover{
+    background-color: #005173;
+    transform: scale(1.05);
+}
+.f{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media(max-width:768px){
+    .a img{
+        width: 200px;
+    }
+    .b{
+        margin: 10px;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .b img{
+        max-width: 100%;
+    }
+    .c{
+        margin: 10px;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .e img{
+        max-width: 450px;
+    }
+}
