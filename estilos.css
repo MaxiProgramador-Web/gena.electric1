@@ -1,25 +1,30 @@
-body{
+body {
     background-color: rgb(174, 174, 174);
     color: rgb(159, 159, 0);
 }
-.a{
-  display: flex;
-  justify-content: center;
+
+.a {
+    display: flex;
+    justify-content: center;
 }
-.a img{
+
+.a img {
     max-width: 250px;
 }
-.b{
+
+.b {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
-.b img{
+
+.b img {
     width: 400px;
     border-radius: 10px;
 }
-.whatsapp-float{
+
+.whatsapp-float {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -27,15 +32,18 @@ body{
     height: 60px;
     z-index: 1000;
 }
-.whatsapp-float img{
+
+.whatsapp-float img {
     width: 100%;
     height: 100%;
 }
+
 .whatsapp-float:hover {
     transform: scale(1.1);
     transition: 0.3s;
 }
-.boton{
+
+.boton {
     display: inline-block;
     margin: 40px auto;
     padding: 12px 25px;
@@ -46,15 +54,18 @@ body{
     font-weight: bold;
     transition: 0.3s;
 }
-.boton:hover{
+
+.boton:hover {
     background-color: #0084a4;
     transform: scale(1.05);
 }
-.d{
+
+.d {
     width: 400px;
     max-width: 100%;
 }
-.BOTON{
+
+.BOTON {
     display: inline-block;
     margin: 40px auto;
     padding: 12px 25px;
@@ -65,17 +76,20 @@ body{
     font-weight: bold;
     transition: 0.3s;
 }
-.BOTON:hover{
+
+.BOTON:hover {
     background-color: #ff8438;
     transform: scale(1.05);
 }
-.c{
+
+.c {
     display: flex;
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
 }
-.e{
+
+.e {
     text-align: center;
     margin: 50px;
     display: flex;
@@ -83,7 +97,14 @@ body{
     flex-wrap: wrap;
     gap: 10px;
 }
-.BoToN{
+
+/* Tamaños de imágenes para computadora */
+.e img {
+    width: 550px;
+    height: auto;
+}
+
+.BoToN {
     display: inline-block;
     margin: 40px auto;
     padding: 12px 25px;
@@ -94,39 +115,26 @@ body{
     font-weight: bold;
     transition: 0.3s;
 }
-.BoToN:hover{
+
+.BoToN:hover {
     background-color: #005173;
     transform: scale(1.05);
 }
-.f{
+
+.f {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
-@media(max-width:768px){
-    .a img{
-        width: 200px;
-    }
-    .b{
-        margin: 10px;
-        gap: 10px;
-        flex-direction: column;
-    }
-    .b img{
-        max-width: 100%;
-    }
-    .c{
-        margin: 10px;
-        gap: 10px;
-        flex-direction: column;
-    }
-    .e img{
-        max-width: 450px;
-    }
-    
+
+/* Tamaños de imágenes para computadora */
+.f img {
+    width: 400px;
+    height: auto;
 }
-.instagram-float{
+
+.instagram-float {
     position: fixed;
     bottom: 90px;
     right: 20px;
@@ -134,15 +142,56 @@ body{
     height: 60px;
     z-index: 1000;
 }
-.instagram-float img{
+
+.instagram-float img {
     width: 100%;
     height: 100%;
 }
+
 .instagram-float:hover {
     transform: scale(1.1);
     transition: 0.3s;
 }
-.z img{
-        display: block;
-        margin: 0 auto;
+
+.z img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;       /* O puedes probar con width: 800px; si prefieres un tamaño fijo */
+    max-width: 900px;  /* Límite máximo para que no ocupe toda la pantalla en monitores gigantes */
+    height: auto;
+}
+
+/* --- REGLAS EXCLUSIVAS PARA CELULARES --- */
+@media (max-width: 768px) {
+    .a img {
+        width: 200px;
     }
+    
+    .b {
+        margin: 10px;
+        gap: 10px;
+        flex-direction: column;
+    }
+    
+    .b img {
+        max-width: 100%;
+    }
+    
+    .c {
+        margin: 10px;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .e {
+        margin: 10px 0;
+    }
+
+    .e img, 
+    .f img, 
+    .z img {
+        width: 95%;
+        max-width: 600px;
+        height: auto;
+    }
+}
